@@ -1,0 +1,9 @@
+#ifndef ARITHMETIC_PROTOTYPES_H_
+#define ARITHMETIC_PROTOTYPES_H_
+
+void ADDITION();
+void SUBTRACTION();
+void MULTIPLICATION();
+void DIVISION();
+
+#endif

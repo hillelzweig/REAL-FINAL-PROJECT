@@ -1,0 +1,9 @@
+#ifndef RETRY_PROTOTYPES_H_
+#define RETRY_PROTOTYPES_H_
+
+void RETRY_ARITHMETIC();
+void RETRY_PERIMETER();
+void RETRY_AREA();
+void RETRY_VOLUME();
+
+#endif

@@ -1,0 +1,11 @@
+#ifndef AREA_PROTOTYPES_H_
+#define AREA_PROTOTYPES_H_
+
+void AREA_CIRCLE();
+void AREA_TRIANGLE();
+void AREA_SQUARE();
+void AREA_RECTANGLE();
+void AREA_TRAPEZOID();
+void AREA_PARALLELOGRAM();
+
+#endif
