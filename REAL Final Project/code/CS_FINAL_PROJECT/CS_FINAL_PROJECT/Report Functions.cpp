@@ -10,12 +10,12 @@ using namespace std;
 //int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};
 //int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};
 void REPORT_ARITHMETIC(){
-	cout << "You got " << TRIES_ARITHMETIC[1] << " addition problems wrong.\n";
+	/*cout << "You got " << TRIES_ARITHMETIC[1] << " addition problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[2] << " subtraction problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[3] << " multiplication problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[4] << " division problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[5] << " retried problems wrong.\n";
-	cout << endl;
+	cout << endl;*/
 	cout << "You got " << CORRECT_ARITHMETIC[1] << " addition problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[2] << " subtraction problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[3] << " multiplication problems right." << endl;
@@ -75,3 +75,9 @@ void REPORT_VOLUME(){
 	cout << "You got " << CORRECT_VOLUME[6] << " conical volume problems correct.\n";
 	cout << "You got " << CORRECT_VOLUME[7] << " retried volume problems correct.\n";
 	cout << endl;}
+void SCORE_REPORT(){
+	cout << CORRECT_ARITHMETIC[1, 2, 3, 4, 5] / 5 << endl;
+	cout << TRIES_PERIMETER[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
+	cout << CORRECT_AREA[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
+	cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
+}

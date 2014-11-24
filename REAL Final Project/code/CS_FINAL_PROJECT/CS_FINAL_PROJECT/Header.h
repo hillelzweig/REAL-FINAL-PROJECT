@@ -52,6 +52,7 @@ void PERIMETER_MENU();
 void AREA_MENU();
 void VOLUME_MENU();
 void RETRY_MENU();
+void SCORE_REPORT();
 void MAIN_MENU();
 
 
