@@ -235,9 +235,10 @@ void MAIN_MENU(){
 		cout << "3) Area\n";
 		cout << "4) Volume\n";
 		cout << "5) Retry incorrect problems\n";
-		cout << "6) Exit\n";
+		cout << "6) View Scores\n";
+		cout << "7) Exit\n";
 		cout << "---------------------------------------\n";
-		cout << "Enter your choice: 1, 2, 3, 4, 5, or 6: ";
+		cout << "Enter your choice: 1, 2, 3, 4, 5, 6, or 7: ";
 		cin >> main_choice;
 		cout << "---------------------------------------\n";
 		switch (main_choice) {
@@ -256,11 +257,15 @@ void MAIN_MENU(){
 		case 5: //Redo the incorrect problem
 			{RETRY_MENU();}
 			break;
-		case 6: //Exit the program
+		case 6: //View Scores
+		{//write whatever goes in here
+		}
+			break;
+		case 7: //Exit the program
 			{cout << "\nHave a nice day!\n\n";
 			exit(0);}
 		default:
-			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, or 6\n";
+			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, or 7\n";
 		}
 	}
 }
