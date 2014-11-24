@@ -1,8 +1,8 @@
 ////////////////////////////
 // Program Name: FINAL PROJECT
-// Name: HILLEL ZWEIG & LUKE REARDON
-// Date: 12/9/2013
-// Class and section: CS171-2
+// Name: HILLEL ZWEIG & HANNES KRAHN
+// Date: 12/9/2014
+// Class and section: CS172-1
 ////////////////////////////
 #include <iostream>
 #include <cstdlib>
@@ -25,7 +25,7 @@ WELCOME();
 cout << "What is your name? ";
 getline(cin, name); //Allows users to enter their name
 cout << endl;
-cout << "Welcome to the Hillel Zweig & Luke Reardon Math Tutor " << name << "!\n";
+cout << "Welcome to the Hillel Zweig & Hannes Krahn Math Tutor " << name << "!\n";
 cout << endl;
 MAIN_MENU();
 return 0;
