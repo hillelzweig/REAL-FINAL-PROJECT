@@ -16,7 +16,7 @@ public:
 	string getName(){ return name; }
 	string getGrade(double percentage)
 	{
-		if (percentage = 100 || percentage >= 97) { grade = "A+"; cout << grade; }
+		if (percentage >= 97) { grade = "A+"; cout << grade; }
 		if (percentage = 96 || percentage >= 94) { grade = "A"; cout << grade; }
 		if (percentage = 93 || percentage >= 90) { grade = "A-"; cout << grade; }
 		if (percentage = 89 || percentage >= 87) { grade = "B+"; cout << grade; }
@@ -32,8 +32,7 @@ public:
 	}
 	void showStudent(Student& s)
 	{
-		cout << "Student " << s.getName() << " has id ";
-		s.getGrade();
+		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage);
 		cout << endl;
 	}
 };

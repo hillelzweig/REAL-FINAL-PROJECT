@@ -19,9 +19,11 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};
 int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};
 int main(){
 srand(time(NULL));
-string name;
+string name, date;
 ASCII_ART();
 WELCOME();
+cout << "What is today's date?";
+getline(cin, date); //Allows users to enter the date
 cout << "What is your name? ";
 getline(cin, name); //Allows users to enter their name
 cout << endl;

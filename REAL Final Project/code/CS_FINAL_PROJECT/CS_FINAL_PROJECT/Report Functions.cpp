@@ -76,6 +76,12 @@ void REPORT_VOLUME(){
 	cout << "You got " << CORRECT_VOLUME[7] << " retried volume problems correct.\n";
 	cout << endl;}
 void SCORE_REPORT(){
+	for (int i = 0; i < count; i++)
+	{
+		sum = CORRECT_ARITHMETIC[i];
+		sum = sum + CORRECT_ARITHMETIC[i];
+	}
+	
 	cout << CORRECT_ARITHMETIC[1, 2, 3, 4, 5] / 5 << endl;
 	cout << TRIES_PERIMETER[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
 	cout << CORRECT_AREA[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
