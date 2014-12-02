@@ -15,13 +15,13 @@ void REPORT_ARITHMETIC(){
 	cout << "You got " << TRIES_ARITHMETIC[3] << " multiplication problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[4] << " division problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[5] << " retried problems wrong.\n";
-	cout << endl;*/
+	cout << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[1] << " addition problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[2] << " subtraction problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[3] << " multiplication problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[4] << " division problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[5] << " retried problems correct.\n";
-	cout << endl;}
+	cout << endl;*/}
 void REPORT_PERIMETER(){
 	cout << "You got " << TRIES_PERIMETER[1] << " circumference problems wrong.\n";
 	cout << "You got " << TRIES_PERIMETER[2] << " pythagorean theorem problems wrong.\n";
@@ -76,14 +76,36 @@ void REPORT_VOLUME(){
 	cout << "You got " << CORRECT_VOLUME[7] << " retried volume problems correct.\n";
 	cout << endl;}
 void SCORE_REPORT(){
-	for (int i = 0; i < count; i++)
+	double sum_add, sum_sub, sum_mult, sum_div, sum_perc=0;
+	sum_add = CORRECT_ARITHMETIC[0];
+	sum_sub = CORRECT_ARITHMETIC[0];
+	sum_mult = CORRECT_ARITHMETIC[0];
+	sum_div = CORRECT_ARITHMETIC[0];
+	for (int i = 1; i < 6; i++)
 	{
-		sum = CORRECT_ARITHMETIC[i];
-		sum = sum + CORRECT_ARITHMETIC[i];
+		sum_add = CORRECT_ARITHMETIC[1];
+		sum_sub = CORRECT_ARITHMETIC[2];
+		sum_mult = CORRECT_ARITHMETIC[3];
+		sum_div = CORRECT_ARITHMETIC[4];
 	}
+	cout << "Your percentage for addition is " << (sum_add / 5) * 100 << "%." << endl;
+	cout << "Your percentage for sub is " << (sum_sub / 5) * 100 << "%." << endl;
+	cout << "Your percentage for mult is " << (sum_mult / 5) * 100 << "%." << endl;
+	cout << "Your percentage for div is " << (sum_div / 5) * 100 << "%." << endl;
+
+	for (int i = 1; i < 6; i++)
+	{
+		sum_perc = (((sum_add / 5) + (sum_sub / 5) + (sum_mult / 5) + (sum_div / 5)) * CORRECT_ARITHMETIC[i]) * 100;
+	}
+	cout << "Your total percentage for arithmetic is " << sum_perc << "%." << endl;
+
+	/*cout << (sum_add / 5) * 100 << endl;
+	cout << (sum_sub / 5) * 100 << endl;
+	cout << (sum_mult / 5) * 100 << endl;
+	cout << (sum_div / 5) * 100 << endl;*/
 	
-	cout << CORRECT_ARITHMETIC[1, 2, 3, 4, 5] / 5 << endl;
+	/*cout << CORRECT_ARITHMETIC[1, 2, 3, 4, 5] / 5 << endl;
 	cout << TRIES_PERIMETER[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
 	cout << CORRECT_AREA[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
-	cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
+	cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;*/
 }

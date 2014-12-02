@@ -8,7 +8,7 @@ using namespace std;
 //int main_choice, choice, name;
 
 void ARITHMETIC_MENU(){
-	while(true)
+	while (true)
 	{
 		cout << "Select what you would like to study from the list below: \n";
 		cout << endl;
@@ -24,30 +24,30 @@ void ARITHMETIC_MENU(){
 		cout << "---------------------------------------\n";
 		switch (choice) {
 		case 1: //Do the addition problem
-			{ADDITION();}
+		{ADDITION(); }
 			break;
 		case 2: //Do the subtraction problem
-			{SUBTRACTION();}
+		{SUBTRACTION(); }
 			break;
 		case 3: //Do the multiplication problem
-			{MULTIPLICATION();}
+		{MULTIPLICATION(); }
 			break;
 		case 4: //Do the division problem
-			{DIVISION();}
+		{DIVISION(); }
 			break;
 		case 5: //Redo the incorrect problem
-			{RETRY_ARITHMETIC();}
+		{RETRY_ARITHMETIC(); }
 			break;
 		case 6: //Exit the program & report
-			{REPORT_ARITHMETIC();
-			MAIN_MENU();}
+		{REPORT_ARITHMETIC();
+		MAIN_MENU(); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, or 6\n";
 		}
 	}
 }//REFACTORING
 void PERIMETER_MENU(){
-	while(true)
+	while (true)
 	{
 		cout << "Select what shape you would like to study from the list below: \n";
 		cout << endl;
@@ -66,39 +66,39 @@ void PERIMETER_MENU(){
 		cout << "---------------------------------------\n";
 		switch (choice) {
 		case 1: //Do the addition problem
-			{PERIMETER_CIRCLE();}
+		{PERIMETER_CIRCLE(); }
 			break;
 		case 2: //Do the subtraction problem
-			{PERIMETER_TRIANGLE();}
+		{PERIMETER_TRIANGLE(); }
 			break;
 		case 3: //Do the multiplication problem
-			{PERIMETER_SQUARE();}
+		{PERIMETER_SQUARE(); }
 			break;
 		case 4: //Do the division problem
-			{PERIMETER_RECTANGLE();}
+		{PERIMETER_RECTANGLE(); }
 			break;
 		case 5: //Do the division problem
-			{PERIMETER_PENTAGON();}
+		{PERIMETER_PENTAGON(); }
 			break;
 		case 6: //Do the division problem
-			{PERIMETER_HEXAGON();}
+		{PERIMETER_HEXAGON(); }
 			break;
 		case 7: //Do the division problem
-			{PERIMETER_OCTAGON();}
+		{PERIMETER_OCTAGON(); }
 			break;
 		case 8: //Redo the incorrect problem
-			{RETRY_PERIMETER();}
+		{RETRY_PERIMETER(); }
 			break;
 		case 9: //Report & exit the program to the main menu
-			{REPORT_PERIMETER();
-			MAIN_MENU();}
+		{REPORT_PERIMETER();
+		MAIN_MENU(); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, 7, 8, or 9\n";
 		}
 	}
 }
 void AREA_MENU(){
-	while(true)
+	while (true)
 	{
 		cout << "Select what area you would like to study from the list below: \n";
 		cout << endl;
@@ -116,36 +116,36 @@ void AREA_MENU(){
 		cout << "---------------------------------------\n";
 		switch (choice) {
 		case 1: //Do the addition problem
-			{AREA_CIRCLE();}
+		{AREA_CIRCLE(); }
 			break;
 		case 2: //Do the subtraction problem
-			{AREA_TRIANGLE();}
+		{AREA_TRIANGLE(); }
 			break;
 		case 3: //Do the multiplication problem
-			{AREA_SQUARE();}
+		{AREA_SQUARE(); }
 			break;
 		case 4: //Do the division problem
-			{AREA_RECTANGLE();}
+		{AREA_RECTANGLE(); }
 			break;
 		case 5: //Do the division problem
-			{AREA_TRAPEZOID();}
+		{AREA_TRAPEZOID(); }
 			break;
 		case 6: //Do the division problem
-			{AREA_PARALLELOGRAM();}
+		{AREA_PARALLELOGRAM(); }
 			break;
 		case 7: //Redo the incorrect problem
-			{RETRY_AREA();}
+		{RETRY_AREA(); }
 			break;
 		case 8: //Report & exit the program to the main menu
-			{REPORT_AREA();
-			MAIN_MENU();}
+		{REPORT_AREA();
+		MAIN_MENU(); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, 7, or 8\n";
 		}
 	}
 }
 void VOLUME_MENU(){
-	while(true)
+	while (true)
 	{
 		cout << "Select what volume you would like to study from the list below: \n";
 		cout << endl;
@@ -163,29 +163,29 @@ void VOLUME_MENU(){
 		cout << "---------------------------------------\n";
 		switch (choice) {
 		case 1: //Do the addition problem
-			{VOLUME_SPHERE();}
+		{VOLUME_SPHERE(); }
 			break;
 		case 2: //Do the subtraction problem
-			{VOLUME_CYLINDER();}
+		{VOLUME_CYLINDER(); }
 			break;
 		case 3: //Do the multiplication problem
-			{VOLUME_CUBE();}
+		{VOLUME_CUBE(); }
 			break;
 		case 4: //Do the division problem
-			{VOLUME_REGULAR_TRIANGLULAR_PRISMS();}
+		{VOLUME_REGULAR_TRIANGLULAR_PRISMS(); }
 			break;
 		case 5: //Do the division problem
-			{VOLUME_REGULAR_RECTANGULAR_PRISMS();}
+		{VOLUME_REGULAR_RECTANGULAR_PRISMS(); }
 			break;
 		case 6: //Do the division problem
-			{VOLUME_CONES();}
+		{VOLUME_CONES(); }
 			break;
 		case 7: //Redo the incorrect problem
-			{RETRY_VOLUME();}
+		{RETRY_VOLUME(); }
 			break;
 		case 8: //Report & exit the program to the main menu
-			{REPORT_VOLUME();
-			MAIN_MENU();}
+		{REPORT_VOLUME();
+		MAIN_MENU(); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, 7, or 8\n";
 		}
@@ -207,19 +207,19 @@ void RETRY_MENU(){
 		cout << "---------------------------------------\n";
 		switch (main_choice) {
 		case 1: //Do the arithmetic problem
-			{ARITHMETIC_MENU();}
+		{ARITHMETIC_MENU(); }
 			break;
 		case 2: //Do the perimeter problem
-			{PERIMETER_MENU();}
+		{PERIMETER_MENU(); }
 			break;
 		case 3: //Do the area problem
-			{AREA_MENU();}
+		{AREA_MENU(); }
 			break;
 		case 4: //Do the volume problem
-			{VOLUME_MENU();}
+		{VOLUME_MENU(); }
 			break;
 		case 5: //Exit the program to the main menu
-			{MAIN_MENU();}
+		{MAIN_MENU(); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, or 5\n";
 		}
@@ -243,27 +243,26 @@ void MAIN_MENU(){
 		cout << "---------------------------------------\n";
 		switch (main_choice) {
 		case 1: //Do the arithmetic problem
-			{ARITHMETIC_MENU();}
+		{ARITHMETIC_MENU(); }
 			break;
 		case 2: //Do the perimeter problem
-			{PERIMETER_MENU();}
+		{PERIMETER_MENU(); }
 			break;
 		case 3: //Do the area problem
-			{AREA_MENU();}
+		{AREA_MENU(); }
 			break;
 		case 4: //Do the volume problem
-			{VOLUME_MENU();}
+		{VOLUME_MENU(); }
 			break;
 		case 5: //Redo the incorrect problem
-			{RETRY_MENU();}
+		{RETRY_MENU(); }
 			break;
 		case 6: //View Scores
-		{//write whatever goes in here
-		}
+		{SCORE_REPORT(); }
 			break;
 		case 7: //Exit the program
-			{cout << "\nHave a nice day!\n\n";
-			exit(0);}
+		{cout << "\nHave a nice day!\n\n";
+		exit(0); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, or 7\n";
 		}
