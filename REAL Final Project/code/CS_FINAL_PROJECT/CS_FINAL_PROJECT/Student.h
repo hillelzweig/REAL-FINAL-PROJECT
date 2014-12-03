@@ -12,9 +12,9 @@ private:
 	double percentage;
 public:
 	Student(string newName) { name = newName; }
-	Student(string newGrade) { grade = newGrade; }
-	string getName(){ return name; }
-	string getGrade(double percentage)
+	Student(double newGrade) { grade = newGrade; }
+	string getName() { return name; }
+	string getGrade(double percentage, string grade)
 	{
 		if (percentage >= 97) { grade = "A+"; cout << grade; }
 		if (percentage = 96 || percentage >= 94) { grade = "A"; cout << grade; }
@@ -28,12 +28,13 @@ public:
 		if (percentage = 69 || percentage >= 67) { grade = "D+"; cout << grade; }
 		if (percentage = 66 || percentage >= 64) { grade = "D"; cout << grade; }
 		if (percentage = 63 || percentage >= 60) { grade = "D-"; cout << grade; }
-		else { grade = "F"; cout << grade; }
+		else { grade = "F"; cout << grade; 
+		}
+		return grade;
 	}
 	void showStudent(Student& s)
 	{
-		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage);
-		cout << endl;
+		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage) << endl;
 	}
 };
 

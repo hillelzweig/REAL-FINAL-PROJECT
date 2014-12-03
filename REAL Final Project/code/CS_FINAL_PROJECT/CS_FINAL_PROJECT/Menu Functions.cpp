@@ -3,10 +3,11 @@
 #include <ctime>
 #include <string>
 #include <iomanip>
+#include <fstream>
 #include "Header.h"
 using namespace std;
 //int main_choice, choice, name;
-
+string date;
 void ARITHMETIC_MENU(){
 	while (true)
 	{
@@ -261,7 +262,16 @@ void MAIN_MENU(){
 		{SCORE_REPORT(); }
 			break;
 		case 7: //Exit the program
-		{cout << "\nHave a nice day!\n\n";
+		{ofstream fout;
+		fout.open("grades.txt");
+		if (fout.fail())
+		{
+			cout << "can't open file" << endl;
+		}
+		fout << "write grading/report card code here" << endl;
+		fout.close();
+		cout << "A file on teh desktop has been created with your results from today's testing. Go take a look and see how you did!" << endl;
+		cout << "\nHave a nice day!\n\n";
 		exit(0); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, or 7\n";
