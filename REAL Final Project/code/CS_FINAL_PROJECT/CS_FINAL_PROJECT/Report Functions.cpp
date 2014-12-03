@@ -10,7 +10,7 @@ using namespace std;
 //int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};
 //int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};
 void REPORT_ARITHMETIC(){
-	/*cout << "You got " << TRIES_ARITHMETIC[1] << " addition problems wrong.\n";
+	cout << "You got " << TRIES_ARITHMETIC[1] << " addition problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[2] << " subtraction problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[3] << " multiplication problems wrong.\n";
 	cout << "You got " << TRIES_ARITHMETIC[4] << " division problems wrong.\n";
@@ -21,7 +21,7 @@ void REPORT_ARITHMETIC(){
 	cout << "You got " << CORRECT_ARITHMETIC[3] << " multiplication problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[4] << " division problems right." << endl;
 	cout << "You got " << CORRECT_ARITHMETIC[5] << " retried problems correct.\n";
-	cout << endl;*/}
+	cout << endl;}
 void REPORT_PERIMETER(){
 	cout << "You got " << TRIES_PERIMETER[1] << " circumference problems wrong.\n";
 	cout << "You got " << TRIES_PERIMETER[2] << " pythagorean theorem problems wrong.\n";
