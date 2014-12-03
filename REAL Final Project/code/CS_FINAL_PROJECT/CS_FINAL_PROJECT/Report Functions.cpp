@@ -77,6 +77,7 @@ void REPORT_VOLUME(){
 	cout << endl;}
 void SCORE_REPORT(){
 	double sum_add, sum_sub, sum_mult, sum_div, sum_perc=0;
+	double p1, p2, p3, p4, p5,p6,p7,p8,p9;
 	sum_add = CORRECT_ARITHMETIC[0];
 	sum_sub = CORRECT_ARITHMETIC[0];
 	sum_mult = CORRECT_ARITHMETIC[0];
@@ -88,15 +89,29 @@ void SCORE_REPORT(){
 		sum_mult = CORRECT_ARITHMETIC[3];
 		sum_div = CORRECT_ARITHMETIC[4];
 	}
+	
 	cout << "Your percentage for addition is " << (sum_add / 5) * 100 << "%." << endl;
 	cout << "Your percentage for sub is " << (sum_sub / 5) * 100 << "%." << endl;
 	cout << "Your percentage for mult is " << (sum_mult / 5) * 100 << "%." << endl;
 	cout << "Your percentage for div is " << (sum_div / 5) * 100 << "%." << endl;
+	p1 = (sum_add / 5) * 100;
+	p2 = (sum_sub / 5) * 100;
+	p3 = (sum_mult / 5) * 100;
+	p4 = (sum_div / 5) * 100;
+	if( sum_add < 1 ){p5 = 0;}
+	else p5 = 1;
+	if (sum_sub < 1){ p6 = 0; }
+	else p6 = 1;
+	if (sum_mult < 1){ p7 = 0; }
+	else p7 = 1;
+	if (sum_div < 1){ p8 = 0; }
+	else p8 = 1;
+	sum_perc = ((p1 + p2 + p3 + p4)/(p5+p6+p7+p8));
 
-	for (int i = 1; i < 6; i++)
+	/*for (int i = 1; i < 6; i++)
 	{
 		sum_perc = (((sum_add / 5) + (sum_sub / 5) + (sum_mult / 5) + (sum_div / 5)) * CORRECT_ARITHMETIC[i]) * 100;
-	}
+	}*/
 	cout << "Your total percentage for arithmetic is " << sum_perc << "%." << endl;
 
 	/*cout << (sum_add / 5) * 100 << endl;
