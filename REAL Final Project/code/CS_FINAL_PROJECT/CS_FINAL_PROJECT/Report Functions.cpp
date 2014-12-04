@@ -76,6 +76,9 @@ void REPORT_VOLUME(){
 	cout << "You got " << CORRECT_VOLUME[7] << " retried volume problems correct.\n";
 	cout << endl;}
 void SCORE_REPORT(){
+
+	//ARITHMETIC
+
 	double sum_add, sum_sub, sum_mult, sum_div, sum_perc=0;
 	double p1, p2, p3, p4, p5,p6,p7,p8,p9;
 	sum_add = CORRECT_ARITHMETIC[0];
@@ -107,20 +110,166 @@ void SCORE_REPORT(){
 	if (sum_div < 1){ p8 = 0; }
 	else p8 = 1;
 	sum_perc = ((p1 + p2 + p3 + p4)/(p5+p6+p7+p8));
-
-	/*for (int i = 1; i < 6; i++)
-	{
-		sum_perc = (((sum_add / 5) + (sum_sub / 5) + (sum_mult / 5) + (sum_div / 5)) * CORRECT_ARITHMETIC[i]) * 100;
-	}*/
 	cout << "Your total percentage for arithmetic is " << sum_perc << "%." << endl;
 
-	/*cout << (sum_add / 5) * 100 << endl;
-	cout << (sum_sub / 5) * 100 << endl;
-	cout << (sum_mult / 5) * 100 << endl;
-	cout << (sum_div / 5) * 100 << endl;*/
+	//AREA
+
+	double sum_circ, sum_tri, sum_sqr, sum_rec, sum_trap, sum_para, sum_perc2 = 0;
+	double q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
+	sum_circ = CORRECT_AREA[0];
+	sum_tri = CORRECT_AREA[0];
+	sum_sqr = CORRECT_AREA[0];
+	sum_rec = CORRECT_AREA[0];
+	sum_trap = CORRECT_AREA[0];
+	sum_para = CORRECT_AREA[0];
+
+	for (int i = 1; i < 6; i++)
+	{
+		sum_circ = CORRECT_AREA[1];
+		sum_tri = CORRECT_AREA[2];
+		sum_sqr = CORRECT_AREA[3];
+		sum_rec = CORRECT_AREA[4];
+		sum_trap = CORRECT_AREA[5];
+		sum_para = CORRECT_AREA[6];
+	}
+
+	cout << "Your percentage for circles is " << (sum_circ / 5) * 100 << "%." << endl;
+	cout << "Your percentage for triangles is " <<(sum_tri / 5) * 100 << "%." << endl;
+	cout << "Your percentage for squares is " << (sum_sqr / 5) * 100 << "%." << endl;
+	cout << "Your percentage for rectangles is " << (sum_rec / 5) * 100 << "%." << endl;
+	cout << "Your percentage for trapazoids is " << (sum_trap / 5) * 100 << "%." << endl;
+	cout << "Your percentage for parallelograms is " << (sum_para) * 100 << "%." << endl;
+	q1 = (sum_circ / 5) * 100;
+	q2 = (sum_tri / 5) * 100;
+	q3 = (sum_sqr / 5) * 100;
+	q4 = (sum_rec / 5) * 100;
+	q5 = (sum_trap / 5) * 100;
+	q6 = (sum_para / 5) * 100;
+
+	if (sum_circ < 1){ q7 = 0; }
+	else q7 = 1;
+	if (sum_tri < 1){ q8 = 0; }
+	else q8 = 1;
+	if (sum_sqr < 1){ q9 = 0; }
+	else q9 = 1;
+	if (sum_rec < 1){ q10 = 0; }
+	else q10 = 1;
+	if (sum_trap < 1){ q11 = 0; }
+	else q11 = 1;
+	if (sum_para < 1){ q12 = 0; }
+	else q12 = 1;
+	sum_perc2 = ((q1+q2+q3+q4+q5+q6) / (q7+q8+q9+q10+q11+q12));
+	cout << "Your total percentage for arithmetic is " << sum_perc2 << "%." << endl;
 	
-	/*cout << CORRECT_ARITHMETIC[1, 2, 3, 4, 5] / 5 << endl;
-	cout << TRIES_PERIMETER[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
-	cout << CORRECT_AREA[1, 2, 3, 4, 5, 6, 7] / 7 << endl;
-	cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;*/
+	//PERIMETER
+
+	double per_circ, per_tri, per_sqr, per_rec, per_pent, per_hex, per_oct, sum_perc3 = 0;
+	double r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13,r14;
+	per_circ = CORRECT_PERIMETER[0];
+	per_tri = CORRECT_PERIMETER[0];
+	per_sqr = CORRECT_PERIMETER[0];
+	per_rec = CORRECT_PERIMETER[0];
+	per_pent = CORRECT_PERIMETER[0];
+	per_hex = CORRECT_PERIMETER[0];
+	per_oct = CORRECT_PERIMETER[0];
+
+	for (int i = 1; i < 6; i++)
+	{
+		per_circ = CORRECT_PERIMETER[1];
+		per_tri = CORRECT_PERIMETER[2];
+		per_sqr = CORRECT_PERIMETER[3];
+		per_rec = CORRECT_PERIMETER[4];
+		per_pent = CORRECT_PERIMETER[5];
+		per_hex = CORRECT_PERIMETER[6];
+		per_oct = CORRECT_PERIMETER[7];
+	}
+
+	cout << "Your percentage for circles is " << (per_circ / 5) * 100 << "%." << endl;
+	cout << "Your percentage for triangles is " << (per_tri / 5) * 100 << "%." << endl;
+	cout << "Your percentage for squares is " << (per_sqr / 5) * 100 << "%." << endl;
+	cout << "Your percentage for rectangles is " << (per_rec / 5) * 100 << "%." << endl;
+	cout << "Your percentage for pentagons is " << (per_pent / 5) * 100 << "%." << endl;
+	cout << "Your percentage for hexagons is " << (per_hex)* 100 << "%." << endl;
+	cout << "Your percentage for octagons is " << (per_oct / 5) * 100 << "%." << endl;
+
+	r1 = (per_circ / 5) * 100;
+	r2 = (per_tri / 5) * 100;
+	r3 = (per_sqr / 5) * 100;
+	r4 = (per_rec / 5) * 100;
+	r5 = (per_pent / 5) * 100;
+	r6 = (per_hex / 5) * 100;
+	r7 = (per_hex / 5) * 100;
+	
+
+	if (per_circ < 1){ r8 = 0; }
+	else r8 = 1;
+	if (per_tri < 1){ r9 = 0; }
+	else r9 = 1;
+	if (per_sqr < 1){ r10 = 0; }
+	else r10 = 1;
+	if (per_rec < 1){ r11 = 0; }
+	else r11 = 1;
+	if (per_pent < 1){ r12 = 0; }
+	else r12 = 1;
+	if (per_hex < 1){ r13 = 0; }
+	else r13 = 1;
+	if (per_oct < 1){ r14 = 0; }
+	else r14 = 1;
+	sum_perc3 = ((r1 + r2 + r3 + r4 + r5 + r6 + r7) / (r8 + r9 + r10 + r11 + r12 + r13 + r14));
+	cout << "Your total percentage for arithmetic is " << sum_perc3 << "%." << endl;
+
+	//VOLUME
+
+	double vol_sph,vol_cyl, vol_cub, vol_rtp, vol_rrt, vol_con, sum_perc4 = 0;
+	double s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12;
+	vol_sph = CORRECT_VOLUME[0];
+	vol_cyl = CORRECT_VOLUME[0];
+	vol_cub = CORRECT_VOLUME[0];
+	vol_rtp = CORRECT_VOLUME[0];
+	vol_rrt = CORRECT_VOLUME[0];
+	vol_con = CORRECT_VOLUME[0];
+
+	for (int i = 1; i < 6; i++)
+	{
+		vol_sph = CORRECT_VOLUME[1];
+		vol_cyl = CORRECT_VOLUME[2];
+		vol_cub = CORRECT_VOLUME[3];
+		vol_rtp = CORRECT_VOLUME[4];
+		vol_rrt = CORRECT_VOLUME[5];
+		vol_con = CORRECT_VOLUME[6];
+	}
+
+	cout << "Your percentage for sphere is " << (vol_sph / 5) * 100 << "%." << endl;
+	cout << "Your percentage for cyliders is " << (vol_cyl / 5) * 100 << "%." << endl;
+	cout << "Your percentage for cubes is " << (vol_cub / 5) * 100 << "%." << endl;
+	cout << "Your percentage for Regular triangular prisms is " << (vol_rtp / 5) * 100 << "%." << endl;
+	cout << "Your percentage for Regular rectangular prisms is " << (vol_rrt / 5) * 100 << "%." << endl;
+	cout << "Your percentage for cones is " << (vol_con /5)* 100 << "%." << endl;
+
+	s1 = (vol_sph / 5) * 100;
+	s2 = (vol_cyl / 5) * 100;
+	s3 = (vol_cub / 5) * 100;
+	s4 = (vol_rtp / 5) * 100;
+	s5 = (vol_rrt / 5) * 100;
+	s6 = (vol_con / 5) * 100;
+
+
+	if (vol_sph< 1){ s7 = 0; }
+	else s7 = 1;
+	if (vol_cyl  < 1){ s8 = 0; }
+	else s8 = 1;
+	if (vol_cub < 1){ s9 = 0; }
+	else s9 = 1;
+	if (vol_rtp < 1){ s10 = 0; }
+	else s10 = 1;
+	if (vol_rrt < 1){ s11 = 0; }
+	else s11 = 1;
+	if (vol_con < 1){ s12 = 0; }
+	else s12 = 1;
+	
+	sum_perc4 = ((s1 + s2 + s3 + s4 + s5 + s6) / (s7 + s8 + s9 + s10 + s11 + s12));
+	cout << "Your total percentage for arithmetic is " << sum_perc4 << "%." << endl;
+
+	
+	//cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;*/
 }
