@@ -34,7 +34,7 @@ public:
 	}
 	void showStudent(Student& s)
 	{
-		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage) << endl;
+		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage,grade) << endl;
 	}
 };
 
