@@ -1,10 +1,14 @@
+#include <windows.h>
 #include <iostream>
+#include <shlobj.h>
 #include <cstdlib>
 #include <ctime>
 #include <string>
 #include <iomanip>
 #include <fstream>
 #include "Header.h"
+#include "Student.h"
+#pragma comment(lib, "shell32.lib")
 using namespace std;
 //int main_choice, choice, name;
 string date;
@@ -262,15 +266,23 @@ void MAIN_MENU(){
 		{SCORE_REPORT(); }
 			break;
 		case 7: //Exit the program
-		{ofstream fout;
-		fout.open("grades.txt");
+		{
+		CHAR my_desktop[MAX_PATH];
+		HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, my_desktop);
+		if (result != S_OK)
+			std::cout << "Error: " << result << "\n";
+		else
+			std::cout << "Path: " << my_desktop << "\n";
+		ofstream fout;
+		char* outfile = strcat(my_desktop, "\\Your Grades.txt");
+		fout.open(outfile);
 		if (fout.fail())
 		{
 			cout << "can't open file" << endl;
 		}
-		fout << "write grading/report card code here" << endl;
+
 		fout.close();
-		cout << "A file on teh desktop has been created with your results from today's testing. Go take a look and see how you did!" << endl;
+		cout << "A file on the desktop has been created with your results from today's testing. Go take a look and see how you did!" << endl;
 		cout << "\nHave a nice day!\n\n";
 		exit(0); }
 		default:

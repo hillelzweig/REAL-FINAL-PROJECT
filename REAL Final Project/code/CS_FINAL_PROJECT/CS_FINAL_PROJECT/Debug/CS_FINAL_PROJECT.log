@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Build started 12/4/2014 2:12:06 PM.
      1>Project "C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
@@ -6,6 +7,30 @@
      1>c:\users\jkrahn17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\report functions.cpp(83): warning C4101: 'p9' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.lib" /MACHINE:X86 "Debug\Area Functions.obj"
+=======
+﻿Build started 12/4/2014 2:03:10 PM.
+     1>Project "C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Area Functions.cpp" "Arithmetic Functions.cpp" "Generic Functions.cpp" "Menu Functions.cpp" "Perimeter Functions.cpp" "Report Functions.cpp" "Retry Functions.cpp" Source.cpp "Volume Functions.cpp"
+         Volume Functions.cpp
+         Source.cpp
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\student.h(15): warning C4244: 'argument' : conversion from 'double' to 'char', possible loss of data
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\source.cpp(26): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         Retry Functions.cpp
+         Report Functions.cpp
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\report functions.cpp(80): warning C4101: 'p9' : unreferenced local variable
+         Perimeter Functions.cpp
+         Menu Functions.cpp
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\student.h(15): warning C4244: 'argument' : conversion from 'double' to 'char', possible loss of data
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\menu functions.cpp(277): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
+         Generic Functions.cpp
+         Arithmetic Functions.cpp
+         Area Functions.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.lib" /MACHINE:X86 "Debug\Area Functions.obj"
+>>>>>>> origin/master
          "Debug\Arithmetic Functions.obj"
          "Debug\Generic Functions.obj"
          "Debug\Menu Functions.obj"
@@ -14,9 +39,18 @@
          "Debug\Retry Functions.obj"
          Debug\Source.obj
          "Debug\Volume Functions.obj"
+<<<<<<< HEAD
          CS_FINAL_PROJECT.vcxproj -> C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe
      1>Done Building Project "C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" (Build target(s)).
 
 Build succeeded.
 
 Time Elapsed 00:00:03.76
+=======
+         CS_FINAL_PROJECT.vcxproj -> C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe
+     1>Done Building Project "C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.93
+>>>>>>> origin/master

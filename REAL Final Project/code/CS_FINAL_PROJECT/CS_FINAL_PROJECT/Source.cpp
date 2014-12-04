@@ -4,14 +4,21 @@
 // Date: 12/9/2014
 // Class and section: CS172-1
 ////////////////////////////
+#include <windows.h>
 #include <iostream>
+#include <shlobj.h>
 #include <cstdlib>
 #include <ctime>
 #include <string>
 #include <iomanip>
 #include <fstream>
 #include "Header.h"
+<<<<<<< HEAD
 //#include "Student.h"
+=======
+#include "Student.h"
+#pragma comment(lib, "shell32.lib")
+>>>>>>> origin/master
 using namespace std;
 //REFACTORING
 int main_choice, choice, name;
@@ -31,6 +38,7 @@ int main(){
 	cout << endl;
 	cout << "Welcome to the Hillel Zweig & Hannes Krahn Math Tutor " << name << "!\n";
 	cout << endl;
+	//create student object and pass in student class and date
 	MAIN_MENU();
 	return 0;
 } //REFACTORING
