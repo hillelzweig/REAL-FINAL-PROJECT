@@ -267,24 +267,19 @@ void MAIN_MENU(){
 			break;
 		case 7: //Exit the program
 		{
-		CHAR my_desktop[MAX_PATH];
-		HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, my_desktop);
-		if (result != S_OK)
-			std::cout << "Error: " << result << "\n";
-		else
-			std::cout << "Path: " << my_desktop << "\n";
-		ofstream fout;
-		char* outfile = strcat(my_desktop, "\\Your Grades.txt");
-		fout.open(outfile);
-		if (fout.fail())
-		{
-			cout << "can't open file" << endl;
+			ofstream fout;
+			fout.open("Your Grades.txt");
+			if (fout.fail())
+			{
+				cout << "can't open file" << endl;
+			}
+			fout << "hell" << endl;
+			fout.close();
+
+
+			cout << "A file on the desktop has been created with your results from today's testing.\nGo take a look and see how you did!\nHave a nice day!\n\n";
+			exit(0);
 		}
-		//fout << date << "_" << name << endl;
-		fout << "We tried to get it to work, but couldn't." << endl;
-		fout.close();
-		cout << "A file on the desktop has been created with your results from today's testing.\nGo take a look and see how you did!\nHave a nice day!\n\n";
-		exit(0); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, or 7\n";
 		}
