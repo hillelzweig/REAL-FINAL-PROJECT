@@ -11,7 +11,7 @@
 #pragma comment(lib, "shell32.lib")
 using namespace std;
 //int main_choice, choice, name;
-
+string date;
 void ARITHMETIC_MENU(){
 	while (true)
 	{
@@ -280,10 +280,10 @@ void MAIN_MENU(){
 		{
 			cout << "can't open file" << endl;
 		}
-		//fout << date << "_" << name << endl;
-		fout << "We tried to get it to work, but couldn't." << endl;
+
 		fout.close();
-		cout << "A file on the desktop has been created with your results from today's testing.\nGo take a look and see how you did!\nHave a nice day!\n\n";
+		cout << "A file on the desktop has been created with your results from today's testing. Go take a look and see how you did!" << endl;
+		cout << "\nHave a nice day!\n\n";
 		exit(0); }
 		default:
 			cout << "Invalid choice.  Try 1, 2, 3, 4, 5, 6, or 7\n";
