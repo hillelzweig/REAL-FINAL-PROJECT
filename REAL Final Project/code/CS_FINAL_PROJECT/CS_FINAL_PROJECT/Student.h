@@ -7,13 +7,15 @@ using namespace std;
 class Student
 {
 private:
+
+public:
 	string name;
 	string grade;
 	double percentage;
-public:
+
 	Student(string newName) { name = newName; }
-	Student(double newGrade) { grade = newGrade; }
-	string getName() { return name; }
+	Student(char newGrade) { grade = newGrade; }
+	string getName(string name) { return name; }
 	string getGrade(double percentage, string grade)
 	{
 		if (percentage >= 97) { grade = "A+"; cout << grade; }
@@ -34,7 +36,7 @@ public:
 	}
 	void showStudent(Student& s)
 	{
-		cout << "Student " << s.getName() << " has the grade of " << s.getGrade(percentage,grade) << endl;
+		cout << "Student " << s.getName(name) << " has the grade of " << s.getGrade(percentage,grade) << endl;
 	}
 };
 
