@@ -11,7 +11,7 @@ void PERIMETER_CIRCLE()
 int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0};*/
 
 
-	int radius = rand() % 10;
+	int radius = rand() % 20;
 	const double PI = 3.14159265;
 	cout << " The Perimeter of a cirle is 2 x PI x Radius. " << endl;
 	cout << endl;
@@ -34,7 +34,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			CORRECT_PERIMETER[choice]++;
 		}
 
-		radius = rand() % 10;
+		radius = rand() % 20;
 	}
 }
 void PERIMETER_TRIANGLE()
@@ -47,8 +47,8 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int b = rand() % 10;
-		int h = rand() % 10;
+		int b = rand() % 20;
+		int h = rand() % 20;
 		double Per;
 		Per = (((sqrt((b*b) + (h*h))) + b + h));
 		double ans;
@@ -65,7 +65,8 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
-
+		b = rand() % 20;
+		h = rand() % 20;
 	}
 }
 void PERIMETER_SQUARE()
@@ -78,14 +79,14 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int w = rand() % 10;
+		int w = rand() % 20;
 		double Per;
 		Per = (4 * w);
 		cout << "What is the Perimeter of a Square with a width of " << w << " and a length of " << w << endl;
 		cin >> Per;
 		if (!(Per == (4 * w)))
 		{
-			cout << "Incorrect ";
+			cout << "Incorrect. " << endl;
 			TRIES_PERIMETER[choice]++;
 		}
 		else{
@@ -93,7 +94,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
-
+		w = rand() % 20;
 	}
 }
 void PERIMETER_RECTANGLE()
@@ -106,8 +107,8 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
-		int w = rand() % 10;
+		int l = rand() % 20;
+		int w = rand() % 20;
 		double AreaR;
 		AreaR = ((2 * l) + (2 * w));
 		cout << "What is the Perimeter of a rectangle with a width of " << w << " and a length of " << l << endl;
@@ -123,6 +124,8 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
+		l = rand() % 20;
+		w = rand() % 20;
 	}
 }
 void PERIMETER_PENTAGON()
@@ -135,7 +138,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
+		int l = rand() % 20;
 		double Per;
 		Per = (5 * l);
 		cout << "What is the Perimeter of a Pentagon with 5 equal Sides of " << l << "?" << endl;
@@ -151,6 +154,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
+		l = rand() % 20;
 	}
 }
 void PERIMETER_HEXAGON()
@@ -163,7 +167,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
+		int l = rand() % 20;
 		double Per;
 		Per = (6 * l);
 		cout << "What is the Perimeter of a Hexagon with 6 equal Sides of " << l << "?" << endl;
@@ -179,6 +183,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
+		l = rand() % 20;
 	}
 }
 void PERIMETER_OCTAGON()
@@ -191,7 +196,7 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
+		int l = rand() % 20;
 		double Per;
 		Per = (8 * l);
 		cout << "What is the Perimeter of a Octagon with 8 equal Sides of " << l << "?" << endl;
@@ -207,5 +212,6 @@ int TRIES_PERIMETER[8]={0,0,0,0,0,0,0,0}, CORRECT_PERIMETER[8]={0,0,0,0,0,0,0,0}
 			cout << endl;
 			CORRECT_PERIMETER[choice]++;
 		}
+		l = rand() % 20;
 	}
 }

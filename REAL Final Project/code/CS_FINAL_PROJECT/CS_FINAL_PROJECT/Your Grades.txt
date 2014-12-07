@@ -1,1 +1,36 @@
-hell
+12/7/14_HSK
+Addition: 100%.
+Subtraction: 100%.
+Multiplication: 100%.
+Division: 80%.
+Total percentage: 95%.
+
+Area Circles: 100%.
+Area Triangles: 100%.
+Area Squares: 80%.
+Area Rectangles: 80%.
+Area Trapazoids: 100%.
+Area Parallelograms: 500%.
+Area Total percentage: 93.3333%.
+
+Perimeter Circles: 100%.
+Perimeter Triangles: 100%.
+Perimeter Squares: 80%.
+Perimeter Rectangles: 100%.
+Perimeter Pentagons: 100%.
+Perimeter Hexagons: 500%.
+Perimeter Octagons: 80%.
+Perimeter Total percentage: 97.1429%.
+
+Volume Spheres: 100%.
+Volume Cyliders: 80%.
+Volume Cubes: 100%.
+Volume Triangular prisms: 100%.
+Volume Rectangular prisms: 100%.
+Volume Cones: 100%.
+Volume Total percentage: 96.6667%.
+
+Total Percentage for all sections: 95.6522%.
+
+A
+

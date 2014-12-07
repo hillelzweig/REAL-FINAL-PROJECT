@@ -11,7 +11,7 @@ void AREA_CIRCLE()
 int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 
 
-	int radius = rand() % 10;
+	int radius = rand() % 20;
 	const double PI = 3.14159265;
 	cout << " The Area of a cirle is PI x Radius x Radius. " << endl;
 	cout << endl;
@@ -33,8 +33,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		radius = rand() % 20;
 	}
-	radius = rand() % 10;
 }
 void AREA_TRIANGLE()
 {/*int choice;
@@ -46,8 +46,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int tri = 1; tri <= 5; tri++)
 	{
-		int b = rand() % 10;
-		int h = rand() % 10;
+		int b = rand() % 20;
+		int h = rand() % 20;
 		double AreaT;
 		AreaT = (0.5*b*h);
 		cout << "What is the Area of a Triangle with a Base of " << b << " and a Height of " << h << endl;
@@ -63,6 +63,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		b = rand() % 20;
+		h = rand() % 20;
 	}
 }
 void AREA_SQUARE()
@@ -75,7 +77,7 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int b = rand() % 10;
+		int b = rand() % 20;
 		double Area;
 		Area = b*b;
 		cout << "What is the Area of a Square with a width of " << b << " and a length of " << b << endl;
@@ -91,6 +93,7 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		b = rand() % 20;
 	}
 }
 void AREA_RECTANGLE()
@@ -103,8 +106,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
-		int w = rand() % 10;
+		int l = rand() % 20;
+		int w = rand() % 20;
 		double AreaR;
 		AreaR = l*w;
 		cout << "What is the Area of a rectangle with a width of " << w << " and a length of " << l << endl;
@@ -120,6 +123,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		l = rand() % 20;
+		w = rand() % 20;
 	}
 }
 void AREA_TRAPEZOID()
@@ -132,9 +137,9 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int trap = 1; trap <= 5; trap++)
 	{
-		int baseone = rand() % 10;
-		int basetwo = rand() % 10;
-		int h = rand() % 10;
+		int baseone = rand() % 20;
+		int basetwo = rand() % 20;
+		int h = rand() % 20;
 		double AreaTrap;
 		AreaTrap = ((0.5*(baseone + basetwo))*h);
 		cout << "What is the Area of a Trapezoid with Base(1) of " << baseone << endl;
@@ -151,6 +156,9 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		baseone = rand() % 20;
+		basetwo = rand() % 20;
+		h = rand() % 20;
 	}
 }
 void AREA_PARALLELOGRAM()
@@ -163,8 +171,8 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int l = rand() % 10;
-		int w = rand() % 10;
+		int l = rand() % 20;
+		int w = rand() % 20;
 		double AreaR;
 		AreaR = (l*w);
 		cout << "What is the Area of a Parallelogram with a Base of " << l << " and a Height of " << w << endl;
@@ -180,5 +188,7 @@ int TRIES_AREA[7]={0,0,0,0,0,0,0}, CORRECT_AREA[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_AREA[choice]++;
 		}
+		l = rand() % 20;
+		w = rand() % 20;
 	}
 }

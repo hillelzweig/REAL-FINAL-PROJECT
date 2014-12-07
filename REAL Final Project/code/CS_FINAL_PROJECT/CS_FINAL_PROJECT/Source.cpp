@@ -35,15 +35,15 @@ int main(Student& s){
 	cout << endl;
 	cout << "Welcome to the Hillel Zweig & Hannes Krahn Math Tutor " << name << "!\n";
 	cout << endl;
-	CHAR my_desktop[MAX_PATH];
+	/*CHAR my_desktop[MAX_PATH];
 	HRESULT result = SHGetFolderPath(NULL, CSIDL_PERSONAL, NULL, SHGFP_TYPE_CURRENT, my_desktop);
 	if (result != S_OK)
 		std::cout << "Error: " << result << "\n";
 	else
-		std::cout << "Path: " << my_desktop << "\n";
+		std::cout << "Path: " << my_desktop << "\n";*/
 	ofstream fout;
-	char* outfile = strcat(my_desktop, "\\Your Grades.txt");
-	fout.open(outfile);
+	//char* outfile = strcat(my_desktop, "\\Your Grades.txt");
+	fout.open("Your Grades.txt");
 	if (fout.fail())
 	{
 		cout << "can't open file" << endl;

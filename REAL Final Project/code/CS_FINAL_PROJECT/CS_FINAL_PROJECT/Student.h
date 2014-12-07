@@ -30,8 +30,7 @@ public:
 		if (percentage = 69 || percentage >= 67) { grade = "D+"; cout << grade; }
 		if (percentage = 66 || percentage >= 64) { grade = "D"; cout << grade; }
 		if (percentage = 63 || percentage >= 60) { grade = "D-"; cout << grade; }
-		else { grade = "F"; cout << grade; 
-		}
+		else { grade = "F"; cout << grade; }
 		return grade;
 	}
 	void showStudent(Student& s)

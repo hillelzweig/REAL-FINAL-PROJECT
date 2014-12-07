@@ -11,7 +11,7 @@ void VOLUME_SPHERE()
 int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 
 
-	int radius = rand() % 10;
+	int radius = rand() % 20;
 	const double PI = 3.14159265;
 	cout << " The Volume of a Sphere  is 4/3 * PI * radius^3. " << endl;
 	cout << endl;
@@ -33,8 +33,8 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
-	}
-	radius = rand() % 10;
+		radius = rand() % 20;
+	}	
 }
 void VOLUME_CYLINDER()
 {/*int choice;
@@ -42,8 +42,8 @@ void VOLUME_CYLINDER()
 int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 
 
-	int radius = rand() % 10;
-	int h = rand() % 10;
+	int radius = rand() % 20;
+	int h = rand() % 20;
 	const double PI = 3.14159;
 	cout << " The Volume of a Cylinder is Base x Height. Base = PI * Radius^2. " << endl;
 	cout << endl;
@@ -52,7 +52,7 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 		double Result = ((PI * radius * radius)*h);
 		double AreaC;
 		cout << endl;
-		cout << "What is the Volume of a Sphere with a radius of " << radius << " and a Height of " << h << "? ";
+		cout << "What is the Volume of a Cylinder with a radius of " << radius << " and a Height of " << h << "? ";
 		cin >> AreaC;
 		if (!(((AreaC <= (Result + .01)) && (AreaC >= (Result - 0.1)))))
 		{
@@ -65,9 +65,9 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
+		radius = rand() % 20;
+		h = rand() % 20;
 	}
-	radius = rand() % 10;
-	h = rand() % 10;
 }
 void VOLUME_CUBE()
 {/*int choice;
@@ -79,7 +79,7 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int b = rand() % 10;
+		int b = rand() % 20;
 		double Area;
 		Area = b*b*b;
 		cout << "What is the Volume of a Cube with a width of " << b << " and a length of " << b << endl;
@@ -96,6 +96,7 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
+		b = rand() % 20;
 	}
 }
 void VOLUME_REGULAR_TRIANGLULAR_PRISMS()
@@ -108,9 +109,9 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int b = rand() % 10;
-		int h = rand() % 10;
-		int l = rand() % 10;
+		int b = rand() % 20;
+		int h = rand() % 20;
+		int l = rand() % 20;
 		double Area;
 		Area = ((((0.5)*b)*h)*l);
 		cout << "What is the Volume of a Triangular Prism with a Base of " << b << " and a height of " << h << endl;
@@ -127,6 +128,9 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
+		b = rand() % 20;
+		h = rand() % 20;
+		l = rand() % 20;
 	}
 }
 void VOLUME_REGULAR_RECTANGULAR_PRISMS()
@@ -139,9 +143,9 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 	cout << endl;
 	for (int rect = 1; rect <= 5; rect++)
 	{
-		int a = rand() % 10;
-		int b = rand() % 10;
-		int c = rand() % 10;
+		int a = rand() % 20;
+		int b = rand() % 20;
+		int c = rand() % 20;
 		double Area;
 		Area = a*b*c;
 		cout << "What is the Volume of a Rectangular Prism with a width of " << a << " and a length of " << b << endl;
@@ -158,6 +162,9 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
+		a = rand() % 20;
+		b = rand() % 20;
+		c = rand() % 20;
 	}
 }
 void VOLUME_CONES()
@@ -166,8 +173,8 @@ void VOLUME_CONES()
 int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 
 
-	int radius = rand() % 10;
-	int h = rand() % 10;
+	int radius = rand() % 20;
+	int h = rand() % 20;
 	const double PI = 3.14159265;
 	cout << " The Volume of a Cone is 1/3 *Base x Height. Base = PI * Radius^2. " << endl;
 	cout << endl;
@@ -176,7 +183,7 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 		double Result = (((PI * radius * radius)*h) / 3);
 		double AreaC;
 		cout << endl;
-		cout << "What is the Cone of a Sphere with a radius of " << radius << " and a Height of " << h << "? ";
+		cout << "What is the Volume of a Cone with a radius of " << radius << " and a Height of " << h << "? ";
 		cin >> AreaC;
 		if (!(((AreaC <= (Result + .01)) && (AreaC >= (Result - 0.1)))))
 		{
@@ -189,7 +196,7 @@ int TRIES_VOLUME[7]={0,0,0,0,0,0,0}, CORRECT_VOLUME[7]={0,0,0,0,0,0,0};*/
 			cout << endl;
 			CORRECT_VOLUME[choice]++;
 		}
+		radius = rand() % 20;
+		h = rand() % 20;
 	}
-	radius = rand() % 10;
-	h = rand() % 10;
 }

@@ -53,6 +53,7 @@ void AREA_MENU();
 void VOLUME_MENU();
 void RETRY_MENU();
 void SCORE_REPORT();
+void WRITE_SCORE();
 void MAIN_MENU();
 
 
