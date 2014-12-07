@@ -13,12 +13,9 @@
 #include <iomanip>
 #include <fstream>
 #include "Header.h"
-<<<<<<< HEAD
-//#include "Student.h"
-=======
 #include "Student.h"
 #pragma comment(lib, "shell32.lib")
->>>>>>> origin/master
+
 using namespace std;
 //REFACTORING
 int main_choice, choice, name;
