@@ -85,13 +85,10 @@ void REPORT_VOLUME(){
 	cout << endl;
 }
 void SCORE_REPORT(){
-<<<<<<< HEAD
+
 	cout << endl;
-=======
 
->>>>>>> origin/master
 	//ARITHMETIC
-
 	double sum_add, sum_sub, sum_mult, sum_div, sum_perc = 0;
 	double p1, p2, p3, p4, p5, p6, p7, p8, p9;
 	sum_add = CORRECT_ARITHMETIC[0];
@@ -129,7 +126,6 @@ void SCORE_REPORT(){
 	cout << "Total percentage: " << sum_perc << "%." << endl << endl;
 
 	//AREA
-
 	double sum_circ, sum_tri, sum_sqr, sum_rec, sum_trap, sum_para, sum_perc2 = 0;
 	double q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12;
 	sum_circ = CORRECT_AREA[0];
@@ -180,7 +176,6 @@ void SCORE_REPORT(){
 	cout << "Area Total percentage: " << sum_perc2 << "%." << endl << endl;
 
 	//PERIMETER
-
 	double per_circ, per_tri, per_sqr, per_rec, per_pent, per_hex, per_oct, sum_perc3 = 0;
 	double r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14;
 	per_circ = CORRECT_PERIMETER[0];
@@ -237,7 +232,6 @@ void SCORE_REPORT(){
 	cout << "Perimeter Total percentage: " << sum_perc3 << "%." << endl << endl;
 
 	//VOLUME
-
 	double vol_sph, vol_cyl, vol_cub, vol_rtp, vol_rrt, vol_con, sum_perc4 = 0;
 	double s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12;
 	vol_sph = CORRECT_VOLUME[0];
@@ -305,7 +299,9 @@ void SCORE_REPORT(){
 
 }
 void WRITE_SCORE(){
+	
 	cout << endl;
+	
 	ofstream fout;
 	fout.open("Your Grades.txt", ios::out | ios::app);
 
@@ -440,8 +436,7 @@ void WRITE_SCORE(){
 	fout << "Perimeter Hexagons: " << (per_hex / 5)* 100 << "%." << endl;
 	fout << "Perimeter Octagons: " << (per_oct / 5) * 100 << "%." << endl;
 	fout << "Perimeter Total percentage: " << sum_perc3 << "%." << endl << endl;
-
-<<<<<<< HEAD
+	
 	//VOLUME
 	double vol_sph, vol_cyl, vol_cub, vol_rtp, vol_rrt, vol_con, sum_perc4 = 0;
 	double s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12;
@@ -504,7 +499,7 @@ void WRITE_SCORE(){
 	else if (percentage <= 63 && percentage >= 60) { grade = "D-\n\n"; fout << grade; }
 	else { grade = "F\n\n"; fout << grade; }
 	fout.close();
-=======
+
 	//cout << CORRECT_VOLUME[1, 2, 3, 4, 5, 6, 7] / 7 << endl;*/
->>>>>>> origin/master
+
 }

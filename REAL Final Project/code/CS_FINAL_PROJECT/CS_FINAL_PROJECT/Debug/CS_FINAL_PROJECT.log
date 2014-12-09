@@ -1,27 +1,13 @@
-<<<<<<< HEAD
-﻿Build started 12/7/2014 2:20:33 PM.
+﻿Build started 12/9/2014 12:13:38 PM.
      1>Project "C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Area Functions.cpp" "Perimeter Functions.cpp" "Volume Functions.cpp"
-         Volume Functions.cpp
-         Perimeter Functions.cpp
-         Area Functions.cpp
-=======
-﻿Build started 12/7/2014 1:10:58 PM.
-     1>Project "C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Menu Functions.cpp" Source.cpp
-         Source.cpp
-     1>c:\users\jkrahn17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\student.h(15): warning C4244: 'argument' : conversion from 'double' to 'char', possible loss of data
-     1>c:\users\jkrahn17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\source.cpp(27): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\jkrahn17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\source.cpp(45): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(118) : see declaration of 'strcat'
-         Menu Functions.cpp
-     1>c:\users\jkrahn17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\student.h(15): warning C4244: 'argument' : conversion from 'double' to 'char', possible loss of data
->>>>>>> origin/master
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Report Functions.cpp"
+         Report Functions.cpp
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\student.h(15): warning C4244: 'argument' : conversion from 'double' to 'char', possible loss of data
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\report functions.cpp(93): warning C4101: 'p9' : unreferenced local variable
+     1>c:\users\hzweig17\documents\github\real-final-project\real final project\code\cs_final_project\cs_final_project\report functions.cpp(310): warning C4101: 'p9' : unreferenced local variable
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.lib" /MACHINE:X86 "Debug\Area Functions.obj"
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.lib" /MACHINE:X86 "Debug\Area Functions.obj"
          "Debug\Arithmetic Functions.obj"
          "Debug\Generic Functions.obj"
          "Debug\Menu Functions.obj"
@@ -30,13 +16,10 @@
          "Debug\Retry Functions.obj"
          Debug\Source.obj
          "Debug\Volume Functions.obj"
-         CS_FINAL_PROJECT.vcxproj -> C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe
-     1>Done Building Project "C:\Users\jkrahn17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" (Build target(s)).
+         LINK : C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe not found or not built by the last incremental link; performing full link
+         CS_FINAL_PROJECT.vcxproj -> C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\Debug\CS_FINAL_PROJECT.exe
+     1>Done Building Project "C:\Users\hzweig17\Documents\GitHub\REAL-FINAL-PROJECT\REAL Final Project\code\CS_FINAL_PROJECT\CS_FINAL_PROJECT\CS_FINAL_PROJECT.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-<<<<<<< HEAD
-Time Elapsed 00:00:01.44
-=======
-Time Elapsed 00:00:02.03
->>>>>>> origin/master
+Time Elapsed 00:00:02.88
